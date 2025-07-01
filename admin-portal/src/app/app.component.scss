@@ -1,0 +1,96 @@
+.admin-container {
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.admin-header {
+  background: linear-gradient(135deg, #1976d2 0%, #1565c0 100%);
+  color: white;
+  padding: 2rem;
+  text-align: center;
+}
+
+.header-content h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 300;
+}
+
+.header-content p {
+  margin: 0;
+  opacity: 0.9;
+  font-size: 1rem;
+}
+
+.admin-nav {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  padding: 2rem;
+  background-color: #f5f5f5;
+}
+
+.nav-item {
+  background: white;
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.nav-item:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.nav-item h3 {
+  margin: 0 0 0.5rem 0;
+  color: #1976d2;
+  font-size: 1.2rem;
+}
+
+.nav-item p {
+  margin: 0;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.admin-main {
+  padding: 2rem;
+}
+
+.welcome-card {
+  background: white;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.welcome-card h2 {
+  margin: 0 0 1rem 0;
+  color: #333;
+}
+
+.welcome-card p {
+  margin: 0;
+  color: #666;
+}
+
+@media (max-width: 768px) {
+  .admin-nav {
+    grid-template-columns: 1fr;
+    padding: 1rem;
+  }
+  
+  .admin-header {
+    padding: 1.5rem;
+  }
+  
+  .header-content h1 {
+    font-size: 1.5rem;
+  }
+}
