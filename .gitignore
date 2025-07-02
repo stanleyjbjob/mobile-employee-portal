@@ -1,0 +1,8 @@
+api/bin/
+api/obj/
+angular/node_modules/
+angular/dist/
+angular/.angular/
+angular/.vscode/
+angular/.angular-devkit/
+angular/.idea/
