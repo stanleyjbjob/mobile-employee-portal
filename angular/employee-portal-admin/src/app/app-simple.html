@@ -1,0 +1,40 @@
+<div class="app-container">
+  <header class="app-header">
+    <h1>{{title}}</h1>
+    <nav>
+      <a routerLink="/">Home</a>
+      <a href="/api/health" target="_blank">API Health</a>
+      <a href="/swagger" target="_blank">API Docs</a>
+    </nav>
+  </header>
+  
+  <main class="app-main">
+    <div class="welcome-section">
+      <h2>Welcome to Employee Portal</h2>
+      <p>This is the administrative interface for the Employee Mobile Portal.</p>
+      
+      <div class="features">
+        <div class="feature-card">
+          <h3>User Management</h3>
+          <p>Manage employee accounts and permissions</p>
+        </div>
+        
+        <div class="feature-card">
+          <h3>Content Management</h3>
+          <p>Manage announcements, events, and surveys</p>
+        </div>
+        
+        <div class="feature-card">
+          <h3>Analytics</h3>
+          <p>View usage statistics and reports</p>
+        </div>
+      </div>
+    </div>
+    
+    <router-outlet></router-outlet>
+  </main>
+  
+  <footer class="app-footer">
+    <p>&copy; 2025 Employee Portal. Built with Angular 18 and ASP.NET Core 8.</p>
+  </footer>
+</div>
